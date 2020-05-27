@@ -14,9 +14,13 @@ COPY --from=prep /usr/local/src /usr/local/src
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+    cmake \
+    gcc \
+    g++ \
+    make \
     build-essential \
     libncurses6 \
-    libncurses-dev \
+    libncurses5-dev \
     libreadline7 \
     libreadline-dev \
     libssl1.1 \
