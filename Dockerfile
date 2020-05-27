@@ -25,7 +25,7 @@ RUN apt-get update \
     zlib1g \
     zlib1g-dev \
     zip \
-    && cd /usr/local/src/v-* \
+    && cd /usr/local/src/SoftEtherVPN* \
     && ./configure \
     && make \
     && make install \
