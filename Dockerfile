@@ -4,7 +4,7 @@ ENV BUILD_VERSION=5.01.9674
 
 RUN wget https://github.com/SoftEtherVPN/SoftEtherVPN/archive/${BUILD_VERSION}.tar.gz \
     && mkdir -p /usr/local/src \
-    && mv ./${BUILD_VERSION}.tar.gz ./v-${BUILD_VERSION}.tar.gz
+    && mv ./${BUILD_VERSION}.tar.gz ./v-${BUILD_VERSION}.tar.gz \
     && tar -x -C /usr/local/src/ -f v-${BUILD_VERSION}.tar.gz \
     && rm v-${BUILD_VERSION}.tar.gz
 
